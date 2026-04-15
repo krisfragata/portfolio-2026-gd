@@ -1,5 +1,5 @@
 import React from "react";
-import { Project } from "../app/software-projects/projects_list";
+import { Project } from "../app/software/projects_list";
 
 interface MoreInfoModalProps {
     project: Project; 
