@@ -275,8 +275,8 @@ body {
 }
 
 .about-container .section .header {
-  font-size: large;
-  font-weight: 500;
+  font-size: medium;
+  font-weight: 600;
   color: var(--text-main);
 }
 
@@ -516,13 +516,17 @@ body {
 
 @media (max-width: 768px) {
   .home {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-rows: 3fr 1fr;
+    overflow-y: auto;
+    margin-left: 0.5rem;
   }
   .home .left-wrapper {
     grid-template-rows: 1fr;
+    overflow-y: scroll;
   }
   .home .right-wrapper {
+    margin: 0;
     height: 300px;
     grid-template-rows: 1fr 100px;
     grid-template-columns: 1fr;
@@ -531,8 +535,10 @@ body {
   }
   .sidemenu {
     align-items: start;   
+    font-size: medium;
   }
   .title{
+    font-size: x-large;
     justify-content: start;
     align-items: end;
   }
@@ -544,6 +550,18 @@ body {
   }
   .philippines-photos {
     visibility: hidden;
+  }
+
+  /* ABOUT PAGE */
+  .about-container {
+    width: 95%;
+    overflow-y: auto;
+  }
+  .about-container .section {
+    grid-template-columns: 1fr;
+  }
+  .about-container .header {
+    font-size: small;
   }
 }
 
