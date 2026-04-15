@@ -29,7 +29,7 @@ export default function Home() {
     
     return (
       <div className="blurb">
-        <p className="blurb-text">I do NOT live in Bagio City currently. But I miss the Philippines so much that this is more of a manifestation :). Do note that the photos, visible on desktop, are not of Baguio City.</p>
+        <p className="blurb-text">I miss the Philippines so much that this is more of a manifestation :). Do note that the photos, visible on desktop, are not of Baguio City.</p>
       </div>
     )
   }
