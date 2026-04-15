@@ -2,14 +2,14 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #fbf6f2;
-  --text-main: #427B78; /* main color for texts */
-  --primary-text: #D22727; /* highlighting color for important texts */
-  --text-highlight-dark-bg: #F6EEC8; /* text color for darker backgrounds */
-  --text-highlight-hover: #f7e279;
-  --button-light: #8DB2B0; /* highlighting color for buttons */
-  --text-dark: #004643;
-  --background-dark-edge: #f7d2bb;
+  --foreground: #f3d0ff;
+  --text-main: #360448; /* main color for texts */
+  --primary-text: #8537df; /* highlighting color for important texts */
+  --text-highlight-dark-bg: #daf7db; /* text color for darker backgrounds */
+  --text-highlight-hover: #91f58c;
+  --button-light: #b189c1; /* highlighting color for buttons */
+  --text-dark: #180621;
+  --background-dark-edge: #bbf7dd;
 }
 
 @theme inline {
@@ -51,6 +51,9 @@ body {
   color: var(--primary-text);
 }
 
+.italics {
+  font-style: italic;
+}
 /* nav bar styling */
 
 .sidemenu {
@@ -59,7 +62,6 @@ body {
   flex-direction: column;
   align-items: end;
   font-family: var(--font-krub);
-  color: var(--text-main);
   color: var(--text-main);
   order: 1;
   font-size: larger;
@@ -71,11 +73,13 @@ body {
 
 .sidemenu-item:hover {
   color: var(--primary-text);
+  font-style: italic;
 }
 
 .sidemenu-item-active {
   color: var(--primary-text);
   text-decoration: underline;
+  font-style: italic;
   padding-bottom: 0.5rem;
   /* text-decoration: underline; */
 }
@@ -243,7 +247,7 @@ body {
   padding-right: 0.75rem;
   padding-bottom: 0.25rem;
   padding-top: 0.25rem;
-  color: var(--text-dark);
+  color: var(--text-main);
 }
 
 .socials-button:hover {
@@ -258,42 +262,43 @@ body {
  border: 0.05em solid var(--primary-text);
  background-color: var(--background);
  display: grid;
- grid-template-rows: 1fr 2fr 4fr;
+ grid-template-rows: auto auto auto;
+ overflow-y: auto;
+ font-size: small;
 }
 
 .about-container .section {
   margin: 1rem;
   display: grid;
-  grid-template-columns: 2fr 3fr;
+  grid-template-columns: 1fr 3fr;
   border-bottom: 5px var(--primary-text);
 }
 
 .about-container .section .header {
-  font-size: large;
+  font-size: medium;
   font-weight: 600;
-  color: var(--primary-text);
+  color: var(--text-main);
 }
 
 .about-container .section .summary {
-  color: var(--text-main);
+  color: var(--text-dark);
 }
 
 .section .education {
   display: grid;
-  flex-direction: 1fr 1fr;
-  gap: 1rem;
+  gap: 1;
 }
 
-.about-container .section .education .education-item .about-name {
-  color: var(--text-main);
+.about-container .section .about-name {
+  color: var(--text-dark);
   /* font-style: italic; */
 }
 
-.section .education-item .details {
+.section .details {
   color: var(--text-main);
 }
 
-.section .education-item .description {
+.section .description {
   color: var(--text-main);
 }
 
@@ -511,13 +516,17 @@ body {
 
 @media (max-width: 768px) {
   .home {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-rows: 3fr 1fr;
+    overflow-y: auto;
+    margin-left: 0.5rem;
   }
   .home .left-wrapper {
     grid-template-rows: 1fr;
+    overflow-y: scroll;
   }
   .home .right-wrapper {
+    margin: 0;
     height: 300px;
     grid-template-rows: 1fr 100px;
     grid-template-columns: 1fr;
@@ -526,8 +535,10 @@ body {
   }
   .sidemenu {
     align-items: start;   
+    font-size: medium;
   }
   .title{
+    font-size: x-large;
     justify-content: start;
     align-items: end;
   }
@@ -539,6 +550,18 @@ body {
   }
   .philippines-photos {
     visibility: hidden;
+  }
+
+  /* ABOUT PAGE */
+  .about-container {
+    width: 95%;
+    overflow-y: auto;
+  }
+  .about-container .section {
+    grid-template-columns: 1fr;
+  }
+  .about-container .header {
+    font-size: small;
   }
 }
 

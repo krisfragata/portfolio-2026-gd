@@ -19,15 +19,15 @@ export const educationList:Education[] = [
     //     id: 'codesmith',
     // },
     {
-        schoolName: 'Washington University in St. Louis - Major in Fine Arts and Minor in Computer Science',
+        schoolName: 'Washington University in St. Louis',
         years: '2017 - 2020',
-        description: 'I studied Fine Arts and Design at Washington University in St. Louis and gained introductory knowledge of Computer Science',
+        description: 'Major in Fine Arts and Minor in Computer Science',
         id: 'washu'
     },
     {
         schoolName: 'Pikesville High School',
         years: '2013 - 2017',
-        description: 'I graduated as valedictorian at Pikesville High School.',
+        description: 'Valedictorian',
         id: 'phs'
     }
 ]
