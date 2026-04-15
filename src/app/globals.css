@@ -33,7 +33,7 @@ body {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  scrollbar-color: var(--button-light) var(--primary-text);
+  scrollbar-color: var(--button-light) var(--background);
 }
 
 /* GENERAL STYLING */
@@ -95,7 +95,7 @@ body {
   margin-left: 1rem;
   margin-right: 1rem;
   margin-top: 2rem;
-  scrollbar-color: var(--button-light) var(--primary-text);
+  scrollbar-color: var(--button-light) var(--background);
 }
 
 .home .left-wrapper {
@@ -103,7 +103,7 @@ body {
   height: 100%;
   display: grid;
   grid-template-rows: 1fr auto;
-  scrollbar-color: var(--button-light)  var(--primary-text);
+  scrollbar-color: var(--button-light) var(--background);
 }
 
 .home .right-wrapper {
@@ -452,7 +452,7 @@ j
   overflow-y: scroll;
   margin-left: 1rem;
   margin-top: 1rem;
-  scrollbar-color: var(--button-light) var(--primary-text);
+  scrollbar-color: var(--button-light) var(--background);
 }
 
 .info-header {
