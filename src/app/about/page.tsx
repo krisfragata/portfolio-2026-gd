@@ -40,7 +40,7 @@ const About: React.FC = () => {
                     About Me
                 </div>
                 <p className="summary">
-                    Enjoyer of music, literature, climbing. Skilled in photography, film, software engineering, design, music, and teaching cats tricks (mainly of the high-five variation).
+                    Enjoyer of music, literature, snowboarding, and climbing. Skilled in photography, film, software engineering, design, music, and teaching cats tricks (mainly of the high-five variety).
                 </p>
             </div>
             <div className="section">
