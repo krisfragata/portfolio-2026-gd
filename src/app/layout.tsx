@@ -63,15 +63,16 @@ export default function RootLayout({
          <div className="home">
           <div className="left-wrapper">
             {children}
-            <div className="left-footer">
+            {/* <div className="left-footer">
               <Footer links={socialsLinks}/>
-            </div>
-            <div className="left-footer-small">
-              <Footer links={socialsLinks}/>
-            </div>
+            </div> */}
           </div>
           <div className="right-wrapper">
             <NavSideBar links={sidebarItems}/>
+            {/* <div className="left-footer-small"> */}
+              {/* <Footer links={socialsLinks}/> */}
+            {/* </div> */}
+            {/* <Footer links={socialsLinks}/> */}
             <Title/>
           </div>
         </div>
