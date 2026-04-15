@@ -45,9 +45,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   const sidebarItems: Links[] = [
-    { label: 'ABOUT.', href: '/more'},
-    { label: 'ART.', href: '/art-projects'},
-    { label: 'SOFTWARE.', href: '/software-projects'},
+    { label: 'ABOUT.', href: '/about'},
+    { label: 'ART.', href: '/art'},
+    { label: 'SOFTWARE.', href: '/software'},
     // { label: 'EXPERIENCES.', href: '/experiences'}
   ]
 

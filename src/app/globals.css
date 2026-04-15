@@ -95,6 +95,7 @@ body {
 }
 
  .home .left-wrapper {
+  width: 100%;
   display: grid;
   grid-template-rows: 4fr 1fr;
   scrollbar-color: var(--button-light)  var(--primary-text);
@@ -251,6 +252,51 @@ body {
   color: var(--text-highlight-dark-bg);
 }
 
+/* ABOUT PAGE STYLING */
+.about-container {
+ width: 80%; 
+ border: 0.05em solid var(--primary-text);
+ background-color: var(--background);
+ display: grid;
+ grid-template-rows: 1fr 2fr 4fr;
+}
+
+.about-container .section {
+  margin: 1rem;
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  border-bottom: 5px var(--primary-text);
+}
+
+.about-container .section .header {
+  font-size: large;
+  font-weight: 600;
+  color: var(--primary-text);
+}
+
+.about-container .section .summary {
+  color: var(--text-main);
+}
+
+.section .education {
+  display: grid;
+  flex-direction: 1fr 1fr;
+  gap: 1rem;
+}
+
+.about-container .section .education .education-item .about-name {
+  color: var(--text-main);
+  /* font-style: italic; */
+}
+
+.section .education-item .details {
+  color: var(--text-main);
+}
+
+.section .education-item .description {
+  color: var(--text-main);
+}
+
 /* SOFTWARE PROJECTS PAGE STYLING */
 
 .software-projects-list-item {
@@ -400,10 +446,6 @@ body {
 }
 .link-item:hover {
   color: var(--primary-text);
-}
-
-.description-paragraph {
-  margin-bottom: 1rem;
 }
 
 /* EXPERIENCES PAGE STYLING */
@@ -586,13 +628,6 @@ body {
     margin-top: 1rem;
     padding: 1rem;
     font-weight: 600;
-  }
-  .description-paragraph {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    font-size: medium;
   }
   /* title section of info modal */
   .info-left {
