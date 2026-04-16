@@ -165,14 +165,22 @@ const SoftwareProjects: React.FC = () => {
                 const isOpen = controlData.imageModalState;
                 controlData.imageModalSetter(!isOpen);
             }}
-        ><span className="text-primary list-numbers-container">{`-`}</span>{`${controlData.project.title}`}</li>
+        ><span className="text-primary list-numbers-container">{}</span>{`${controlData.project.title}`}</li>
     })
 
+    const renderSoftwareList = () => {
+
+    }
+
     return (
+        // <div className="software-container">
+        //     <ol className="software-project-list">{list}</ol>
+        //     {renderImageModals()}
+        //     {renderInfoModals()}
+        // </div>
+
         <div className="left-main-text">
-            <ol className="software-project-list">{list}</ol>
-            {renderImageModals()}
-            {renderInfoModals()}
+            The <span className="text-primary">Software</span> page is under progress...
         </div>
     );
 }

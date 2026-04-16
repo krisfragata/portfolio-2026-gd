@@ -1,12 +1,12 @@
-import portfolioGif from '@/../public/software-projects/portfolio.gif';
+import portfolioGif from '@/../public/art/portfolio.gif';
 import { StaticImport } from 'next/dist/shared/lib/get-img-props';
 // svisualize image imports
-import svisualizeUpdate from '@/../public/software-projects/svisualize_update.gif';
-import svisualizePhoto from '@/../public/software-projects/svisualize.png';
+import svisualizeUpdate from '@/../public/art/svisualize/SvisualizeGif1.gif';
+import svisualizePhoto from '@/../public/art/svisualize/screenshot.png';
 // daily dose image imports
-import dailyDose1 from '@/../public/software-projects/daily_dose1.gif';
-import dailyDose3 from '@/../public/software-projects/daily_dose3.gif'
-import dailyDose4 from '@/../public/software-projects/daily_dose4.gif'
+import dailyDose1 from '@/../public/art/daily_dose/daily_dose1.gif';
+import dailyDose2 from '@/../public/art/daily_dose/daily_dose2.gif'
+import dailyDose3 from '@/../public/art/daily_dose/daily_dose3.gif'
 
 
 export interface Project {
@@ -126,7 +126,7 @@ export const projects:Project[] = [
             "This project was made very early on in my programming journey so if I were to do it again, I would do a better job of documenting and structuring the code to be more readable and maintainable. This project also taught me the necessary skills to communicate and translate the needs of a designer into the desired output."
         ],
         githubLink: 'https://github.com/andrianalevytsky/dailydose',
-        imageSources: [dailyDose1, dailyDose3, dailyDose4],
+        imageSources: [dailyDose1, dailyDose2, dailyDose3],
         plans: "There are currently no plans to expand on the Wall Drawings but this is a project I would gladly expand on in the future.",
         figma: 'NA',
         otherLinks: [{

@@ -8,7 +8,7 @@ const ArtProjects: React.FC = () => {
     const [isInfoModalOpen, setIsInfoModalOpen] = useState(false);
     const [openProject, setOpenProject] = useState<Art>({
         artwork: '',
-        description: [],
+        description: '',
         id: '0',
         imageSources: [],
         links: [],
