@@ -711,6 +711,11 @@ j
     width: 90%;
     overflow-y: scroll;
   }
+
+  .art-modal-container {
+    max-width: 100%;
+    min-width: 100%;
+  }
 }
 
 /* change order on small screens */
