@@ -36,8 +36,8 @@ export interface Art {
     imageSources: StaticImport[];
     links: Link[];
     years: string;
-    description: string[];
-    embed: JSX;
+    description: string;
+    embed: string;
 }
 
 interface Link {
@@ -56,10 +56,19 @@ export const artList:Art[] = [
             label: 'svisualize.dev',
             href: 'https://svisualize.dev',
         }],
-        description: ["Under OSLabs' tech accelerator I designed and deployed an accessible nad responsive landing page for our developer tool, Svisualize. I used TailwindCSS, SvelteKit, and TypeScript."],
+        description: "I designed and developed this landing page for the developer tool Svisualize, developed under OS Labs tech accelerator. To ensure an accessible and responsive site, I leveraged TailwindCSS, SvelteKit, and TypeScript.",
         embed: '',
     },
-   
+    {
+        artwork: 'Sawyer Levy Training',
+        type: 'brand identity & web design',
+        id: 'sawyer',
+        years: '2022',
+        imageSources: [sawyerLogo, sawyerLanding, sawyerGif],
+        links: [],
+        description: "Logo and website design for Sawyer Levy Training",
+        embed: '',
+    },
     {
         artwork: 'Kin/Kris Fragata Music',
         type: 'creative direction, marketing & production',
@@ -68,11 +77,7 @@ export const artList:Art[] = [
         imageSources: [bananaSplitCover, bananaSplitLanding, bananaSplitGif, cycleCover, firstEncountersCover],
         links: [
         ],
-        description: [
-            "An ongoing musical/video/writing project, Kin, previously Kris Fragata, is an exploration into self, filipino culture, and family.",
-            "The works below are cover photos and marketing used in the musical releases under Kris Fragata.",
-            "The cover photo for Cycle (photo #4) was produced and edited by Avery Johnson."
-        ],
+        description: "Kin, previously Kris Fragata, is an exploration into self, filipino culture, and family. The works below are cover photos and marketing used in the musical releases under Kris Fragata. The cover photo for Cycle (photo #4) was produced and edited by Avery Johnson.",
         embed: '',
     },
     // {
@@ -87,19 +92,10 @@ export const artList:Art[] = [
         years: 'feb 2023',
         imageSources: [peoplesGold1, peoplesGold2, peoplesGold3, peoplesGold4, peoplesGold5],
         links: [],
-        description: [],
+        description: "Product Photography done for The People's Gold, home grown herbal remedies for everyday use.",
         embed: '',
     },
-    {
-        artwork: 'Sawyer Levy Training',
-        type: 'brand identity & web design',
-        id: 'sawyer',
-        years: '2022',
-        imageSources: [sawyerLogo, sawyerLanding, sawyerGif],
-        links: [],
-        description: [],
-        embed: '',
-    },
+   
     {
         artwork: 'Kensho',
         type: 'fashion video production',
@@ -112,7 +108,7 @@ export const artList:Art[] = [
                 href: 'https://www.youtube.com/watch?v=W65kpK7aqN4',
             }
         ],
-        description: [],
+        description: "'Kensho is the zen experience or enlightenment, when one’s own nature is seen for what it truly is. Thus, delving deeper into the concept of color adaptation in terms of culture and identity with the way we each perceive parts of the world in our own unique ways and allow a multitude of experiences and backgrounds come forth to represent multifaceted identities.' - Mirai Patel, Fashion Designer.",
         embed: 'https://www.youtube.com/embed/W65kpK7aqN4?si=6z9dVOBUS6HX_mNm'
     },
     {
@@ -127,10 +123,7 @@ export const artList:Art[] = [
                 href: 'https://andrianalevytsky.github.io/dailydose/',
             }
         ],
-        description: [
-             "For Daily Dose, I worked with graphic designer, Andriana Levytsky, to create an interactive gallery using HTML5 Canvas and a bit of math.",
-            "This was my first collaborative coding project, and the project that birthed my love for programming. I found HTML5 Canvas to be finnicky but rewarding. With the right logic and math one can so many fun things.",
-        ],
+        description: "For Daily Dose, I worked with graphic designer, Andriana Levytsky, to create an interactive gallery using HTML5 Canvas and a bit of math. This was my first collaborative coding project, and the project that birthed my love for programming. I found HTML5 Canvas to be finnicky but rewarding. With the right logic and math one can do so many fun things.",
         embed: '',
     },
      {
@@ -145,11 +138,7 @@ export const artList:Art[] = [
                 href: 'https://youtu.be/qMOT-39YdNk',
             }
         ],
-        description: ["A video passion project made solely out of the love for the song, 'I hope that you think of me' by Pity Part and Lucys.",
-            "At the time, I was living in a 2 story white house in the town of Charlemont (population 800).",
-            "I wanted to express the solitude that the town invoked in me while showcasing the beautiful landscape.",
-            "My friend, Kloee Wheeler, helped in filming many of the shots, including the awesome drone footage."
-        ],
+        description: "A video passion project made solely out of the love for the song, 'I hope that you think of me' by Pity Part and Lucys. At the time, I was living in the town of Charlemont (population 800). I wanted to express the solitude that the town invoked in me while showcasing the beautiful landscape. My friend, Kloee Wheeler, helped in filming many of the shots, including the awesome drone footage.",
         embed: 'https://www.youtube.com/embed/qMOT-39YdNk?si=woJtT-QpCXBRJAx8',
     },
     {
@@ -164,9 +153,7 @@ export const artList:Art[] = [
                 href: 'https://www.youtube.com/watch?v=7a0PofVFlxA'
             }
         ],
-        description: [
-            "This is a visual poem and was inspired by the books Stay True by Hua Hsu and A Tale for The Time Being by Ruth Oseki"
-        ],
+        description: "'If forever were in a moment' is a visual poem inspired by the books Stay True by Hua Hsu and A Tale for The Time Being by Ruth Oseki.",
         embed: 'https://www.youtube.com/embed/7a0PofVFlxA?si=IWoInRbkKehaxGSZ',
     },
     {
@@ -181,7 +168,7 @@ export const artList:Art[] = [
                 href: 'https://youtu.be/UZ13uiMqIP0',
             }
         ],
-        description: [],
+        description: '',
         embed: 'https://www.youtube.com/embed/UZ13uiMqIP0?si=ry656GniwXlUvRX7',
     },
 ];
