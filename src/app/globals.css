@@ -10,6 +10,7 @@
   --button-light: #b189c1; /* highlighting color for buttons */
   --text-dark: #180621;
   --background-dark-edge: #e8d3f5;
+  --links: #0840d7; 
 }
 
 @theme inline {
@@ -40,6 +41,10 @@ body {
 .highlight {
   background-color: var(--text-highlight-dark-bg); 
   padding: 2px 4px; 
+}
+
+.link {
+  color: var(--links);
 }
 
 .highlight:hover {
@@ -325,6 +330,117 @@ j
   color: var(--primary-text);
   cursor: pointer;
   font-weight: 600;
+}
+
+.art-modal-container {
+  position: fixed;
+  bottom: 0rem;
+  right: 0rem;
+  min-width: 50%;
+  max-width: 50%;
+  height: 100%;
+  border: 0.02em solid var(--primary-text); 
+  display: grid;
+  grid-template-rows: auto 1fr;
+  background-color: var(--background);
+  overflow-y: auto;
+  z-index: 1000;
+}
+
+.modal-actions {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  margin-bottom: 0.5rem;
+  width: 100%;
+}
+
+.modal-actions .button {
+  margin-right: 1rem;
+  margin-top: 1.5em;
+  font-size: medium;
+  color: var(--primary-text);
+}
+
+.modal-actions .button:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.art-modal-container .art-info-container {
+  height: 90%;
+  width: 100%;
+  display: grid;
+  grid-template-rows: auto auto auto 1fr;
+  gap: 2rem;
+  font-size: medium;
+}
+
+.art-title-section {
+  display: grid;
+  align-items: center;
+  place-items: center;
+}
+
+.art-info-title {
+  /* font-family: var(--font-kumar-one); */
+  color: var(--primary-text);
+  font-size: x-large;
+  stroke: var(--text-dark);
+}
+
+.art-details {
+  font-size: medium;
+  color: var(--text-main);
+}
+
+.art-description-container {
+  display: grid;
+  align-items: center;
+  place-items: center;
+  width: 100%;
+}
+
+.art-link-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.description-line {
+  color: var(--text-main);
+  margin-left: 1rem;
+  margin-right: 1rem;
+  text-align: center;
+  width: 80%;
+}
+
+.link-line {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  text-align: center;
+  width: 80%; 
+}
+.link-line:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.art-media-container {
+  align-items: center;
+  place-items: center;
+  display: grid;
+  margin: 1rem;
+  gap: 1rem;
+}
+.art-media-container .media-item {
+  width: 70%;
+}
+
+.youtube-player-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 /* SOFTWARE PROJECTS PAGE STYLING */
