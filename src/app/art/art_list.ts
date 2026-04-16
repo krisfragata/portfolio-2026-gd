@@ -108,7 +108,7 @@ export const artList:Art[] = [
                 href: 'https://www.youtube.com/watch?v=W65kpK7aqN4',
             }
         ],
-        description: "'Kensho is the zen experience or enlightenment, when one’s own nature is seen for what it truly is. Thus, delving deeper into the concept of color adaptation in terms of culture and identity with the way we each perceive parts of the world in our own unique ways and allow a multitude of experiences and backgrounds come forth to represent multifaceted identities.' - Mirai Patel, Fashion Designer.",
+        description: "Fashion designer, Mirai Patel, aimed to delve deeper into the concept of color adaptation in terms of culture and identity. I worked to highlight such pieces for 'Kensho'",
         embed: 'https://www.youtube.com/embed/W65kpK7aqN4?si=6z9dVOBUS6HX_mNm'
     },
     {
