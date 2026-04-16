@@ -727,6 +727,17 @@ j
   .art-modal-container {
     max-width: 100%;
     min-width: 100%;
+    height: 100%;
+  }
+
+  .art-info-container {
+    overflow-y: scroll;
+    height: 100%;
+  }
+
+  .youtube-player {
+    width: 350px;
+    height: 196px;
   }
 }
 
