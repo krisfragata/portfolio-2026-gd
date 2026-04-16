@@ -306,7 +306,7 @@ j
 /* ART PAGE STYLING */
 .art-container {
  width: auto; 
- height: 100%;
+ height: 80%;
  /* border: 0.05em solid var(--primary-text); */
  /* background-color: var(--background); */
  display: flex;
@@ -318,7 +318,7 @@ j
 .art-container .art-item {
   font-size: large;
   color: var(--text-main);
-  padding-bottom: 1rem;
+  padding-bottom: 0.5rem;
 }
 
 .art-container .art-item:hover {
@@ -542,7 +542,7 @@ j
 @media (max-width: 768px) {
   .home {
     display: grid;
-    grid-template-rows: auto;
+    grid-template-rows: 1fr;
     overflow-y: auto;
     margin-left: 0.5rem;
   }
@@ -588,6 +588,12 @@ j
   }
   .about-container .header {
     font-size: small;
+  }
+
+  /* ART PAGE */
+  .art-container {
+    width: 90%;
+    overflow-y: scroll;
   }
 }
 
