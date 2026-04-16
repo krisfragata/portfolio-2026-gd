@@ -95,6 +95,7 @@ const ArtInfoModal: React.FC<ArtInfoModalProps> = ({project, setIsModalOpen, isM
         return (
             <div className="youtube-player-container">
                 <iframe 
+                className="youtube-player"
                 width="560" 
                 height="315" 
                 src={project.embed} 
