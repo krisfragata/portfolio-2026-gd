@@ -106,43 +106,6 @@ const ArtInfoModal: React.FC<ArtInfoModalProps> = ({project, setIsModalOpen, isM
         );
     }
 
-    // /**
-    //  * @description handles rendering 'title' information, including project name, year, and relevant links
-    //  */
-    // const renderTitleInfo = () => {
-    //     return <div className="info-left">
-    //         <div className="title-section">
-    //             <p className="text-primary">{project.title}</p>
-    //             <p className="info-header">{project.year}</p>
-    //         </div>
-    //         <div className="main-links">
-    //             {
-    //                 project.githubLink == '' || project.githubLink == 'NA' ? <p>Github: NA</p> : <a href={project.githubLink} target="_blank" className="link-item">Github</a>
-    //             }
-    //             {
-    //                 project.figma == '' || project.figma == 'NA' ? <p>Figma: NA</p> : <a href={project.figma} target="_blank" className="link-item">Figma</a>
-    //             }
-    //                 {
-    //                     project.otherLinks.map((link) => (
-    //                         <a key={link.href} href={link.href} target="_blank" className="link-item">{`${link.label}`}</a>
-    //                     ))
-    //                 }
-    //         </div>
-    //     </div>
-    // }
-
-    // /**
-    //  * @description renders project description 
-    //  */
-    // const renderDescription = () => {
-    //     return <div className="info-right">
-    //             {
-    //                 project.description.map((line, i) => (
-    //                     <p key={i} className="description-paragraph">{line}</p>
-    //                 ))
-    //             }
-    //     </div>
-    // }
     const renderModal = () => {
         const modal = isModalOpen ? <div className={`art-modal-container ${extraStyling}`}>
              <div className="modal-actions">
