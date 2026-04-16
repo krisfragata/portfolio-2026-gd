@@ -445,6 +445,18 @@ j
 
 /* SOFTWARE PROJECTS PAGE STYLING */
 
+.software-container {
+ width: auto; 
+ height: 80%;
+ /* border: 0.05em solid var(--primary-text); */
+ /* background-color: var(--background); */
+ display: flex;
+ flex-direction: column;
+ overflow-y: auto;
+ font-size: small;
+ color: var(--text-main);
+}
+
 .software-projects-list-item {
   /* font-weight: 500; */
   /* font-style: normal; */
