@@ -6,7 +6,7 @@ import { useEffect, useState } from "react";
 export default function Home() {
   const [isBlurbOpen, setIsBlurbOpen] = useState(false);
   const [windowWidth, setWindowWidth] = useState<number>(0);
-  const [isSoftwareBlurbOpen, setIsSoftwareBlurbOpen] = useState(false);
+  const [isExtraBlurbOpen, setIsExtraBlurbOpen] = useState(false);
 
   useEffect(() => {
     if (!windowWidth) {
@@ -41,7 +41,7 @@ export default function Home() {
   const renderSoftwareBlurb = () => {
     return (
       <div className="blurb">
-        <p className="blurb-text">something cool will happen if you click this... one day</p>
+        <p className="blurb-text">something cool will happen if you click or hover on this... one day</p>
       </div>
     )
   }
@@ -58,7 +58,7 @@ export default function Home() {
 
     <div className="main-container">
         <div className="left-main-text">
-      I’m an <span className="text-primary hover:cursor-pointer hover:font-semibold">artist</span> and <span className="text-primary hover:cursor-pointer hover:font-semibold">ex-software engineer</span> based in Boston, Massachusetts and <span 
+      I’m an <span className="text-primary hover:cursor-pointer hover:font-semibold" onMouseOver={() => { if (windowWidth < 768) return; setIsExtraBlurbOpen(true);}} onMouseOut={() => { if (windowWidth < 768) return; setIsExtraBlurbOpen(false);}}>artist</span> and <span className="text-primary hover:cursor-pointer hover:font-semibold" onMouseOver={() => { if (windowWidth < 768) return; setIsExtraBlurbOpen(true);}} onMouseOut={() => { if (windowWidth < 768) return; setIsExtraBlurbOpen(false);}}>ex-software engineer</span> based in Boston, Massachusetts and <span 
         className="highlight" 
         onMouseOver={() => {
           if (windowWidth < 768) return;
@@ -75,7 +75,7 @@ export default function Home() {
       >Baguio City, Philippines</span>.
       {isBlurbOpen && renderBlurb()}
       {isBlurbOpen && renderPhilippinesBlurb()}
-      {isSoftwareBlurbOpen && renderSoftwareBlurb()}
+      {isExtraBlurbOpen && renderSoftwareBlurb()}
     </div>
     </div>
   );
