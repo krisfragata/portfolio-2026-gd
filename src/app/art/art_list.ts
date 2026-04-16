@@ -6,6 +6,11 @@ export interface Art {
 
 export const artList:Art[] = [
     {
+        artwork: 'Svisualize Landing Page',
+        details: 'web design & development',
+        id: 'svisualize'
+    },
+    {
         artwork: "Lucy's Music Video",
         details: 'videography, creative direction',
         id: 'lucy'
