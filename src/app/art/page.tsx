@@ -14,6 +14,7 @@ const ArtProjects: React.FC = () => {
         links: [],
         type: '',
         years: '',
+        embed: '',
     })
 
     /**
