@@ -37,11 +37,7 @@ const ArtInfoModal: React.FC<ArtInfoModalProps> = ({project, setIsModalOpen, isM
     const renderDescription = () => {
         return (
             <div className="art-description-container">
-               {
-                project.description.map((line, i) => (
-                    <p className="description-line" key={i}>{line}</p>
-                ))
-               }
+                <p className="description-line">{project.description}</p>
             </div>
         )
     }
