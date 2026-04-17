@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Art } from "../app/art/art_list";
+import { Art } from "../app/works/art_list";
 import Image from "next/image";
 
 interface ArtInfoModalProps {
@@ -50,7 +50,7 @@ const ArtInfoModal: React.FC<ArtInfoModalProps> = ({project, setIsModalOpen, isM
             <div className="art-link-container">
                {
                 project.links.map((l, i) => (
-                   <a href={l.href} target="_blank" className="link link-line" key={i}>{`${l.label} ⤴️`}</a>
+                   <a href={l.href} target="_blank" className="link link-line" key={i}>{`${l.label}  ⤴`}</a>
                 ))
                }
             </div>
