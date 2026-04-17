@@ -59,7 +59,7 @@ export default function Home() {
     <div className="main-container">
         <div className="left-main-text">
           <p>
-            I’m an <span className="text-primary hover:cursor-pointer hover:font-semibold" onMouseOver={() => { if (windowWidth < 768) return; setIsExtraBlurbOpen(true);}} onMouseOut={() => { if (windowWidth < 768) return; setIsExtraBlurbOpen(false);}}>artist</span> and <span className="text-primary hover:cursor-pointer hover:font-semibold" onMouseOver={() => { if (windowWidth < 768) return; setIsExtraBlurbOpen(true);}} onMouseOut={() => { if (windowWidth < 768) return; setIsExtraBlurbOpen(false);}}>ex-software engineer</span> based in Boston, Massachusetts and <span 
+            I’m an <span className="text-primary hover:cursor-pointer hover:font-semibold" onMouseOver={() => { if (windowWidth < 768) return; setIsExtraBlurbOpen(true);}} onMouseOut={() => { if (windowWidth < 768) return; setIsExtraBlurbOpen(false);}}>artist</span> and <span className="text-primary hover:cursor-pointer hover:font-semibold" onMouseOver={() => { if (windowWidth < 768) return; setIsExtraBlurbOpen(true);}} onMouseOut={() => { if (windowWidth < 768) return; setIsExtraBlurbOpen(false);}}>software engineer</span> based in Boston, Massachusetts and <span 
               className="highlight" 
               onMouseOver={() => {
                 if (windowWidth < 768) return;
