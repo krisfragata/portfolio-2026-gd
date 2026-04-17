@@ -46,8 +46,9 @@ export default function RootLayout({
 }>) {
   const sidebarItems: Links[] = [
     { label: 'ABOUT.', href: '/about'},
-    { label: 'ART.', href: '/art'},
-    { label: 'SOFTWARE.', href: '/software'},
+    { label: 'WORKS.', href: '/works'},
+    // { label: 'SOFTWARE.', href: '/software'},
+    { label: 'READING LIST.', href: '/reading'},
     // { label: 'EXPERIENCES.', href: '/experiences'}
   ]
 

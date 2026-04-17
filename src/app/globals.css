@@ -47,6 +47,10 @@ body {
   color: var(--links);
 }
 
+.link:hover {
+  text-decoration: underline;
+}
+
 .highlight:hover {
   cursor: pointer;
   background-color: var(--text-highlight-hover);
@@ -218,10 +222,18 @@ body {
   font-style: normal;
   font-size: x-large;
   max-width: 60%;
-  order: 2;
   min-height: 80%;
-  place-items: center;
+  order: 1;
   /* color: var(--text-dark); */
+}
+
+.contact {
+  padding-top: 1rem;
+  font-size: medium;
+}
+
+.home-links {
+  font-size: medium;
 }
 
 .left-footer{
@@ -443,6 +455,37 @@ j
   justify-content: center;
 }
 
+/* READING LIST PAGE STYLING */
+.reading-list-container {
+ width: auto; 
+ height: 80%;
+ display: grid;
+ grid-template-rows: auto 1fr;
+ gap: 1rem;
+ overflow-y: auto;
+ font-size: medium; 
+ color: var(--text-main);
+}
+
+.reading-list-links {
+  font-size: small;
+}
+.reading-list-link {
+  color: var(--links);
+}
+
+.book-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.book-item {
+  width: 40%;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  padding-bottom: 0.5rem;
+}
+
 /* SOFTWARE PROJECTS PAGE STYLING */
 
 .software-container {
@@ -626,10 +669,6 @@ j
   display: flex;
 }
 
-.experiences-list-container {
-  /* margin-left: 1.75rem; */
-}
-
 .list-numbers-container {
   min-width: 3rem;
   display: inline-block;
@@ -705,6 +744,14 @@ j
   .philippines-photos {
     visibility: hidden;
   }
+  .contact {
+    color: var(--text-main);
+    padding: 0;
+    font-size: small;
+  }
+  .home-links {
+    font-size: small;
+  }
 
   /* ABOUT PAGE */
   .about-container {
@@ -738,6 +785,12 @@ j
   .youtube-player {
     width: 350px;
     height: 196px;
+  }
+
+  /* READING LIST  */
+  .book-item {
+    grid-template-columns: 1fr;
+    width: 60%;
   }
 }
 
